@@ -18,6 +18,7 @@ android {
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
 
         buildConfigField('String', 'URL_SERVER', '"http://api.nytimes.com/svc/mostpopular/v2/"')
+        buildConfigField('String', 'API_KEY', '"btOJEIF05dZotNhGdz1joaQpPhx2Hebq"')
 
     }
 

@@ -11,7 +11,7 @@ class GetMostViewedArticleUseCase constructor(
 ) : UseCase<MostViewedArticleResponse, GetMostViewedArticleUseCase.Params?>(apiErrorHandle) {
 
     override suspend fun run(params: Params?): MostViewedArticleResponse {
-        return params?.apiKey?.let { articleRepository.getMostViewedArticle(apiKey = it) }!!
+        return  articleRepository.getMostViewedArticle()
     }
     data class Params(val apiKey: String)
 }
